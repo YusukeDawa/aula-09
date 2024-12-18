@@ -3,9 +3,11 @@ import click
 from flask_migrate import Migrate
 from app import create_app, db
 from app.models import User, Role
+from flask_moment import Moment
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 migrate = Migrate(app, db)
+moment = Moment(app)
 
 
 @app.shell_context_processor
