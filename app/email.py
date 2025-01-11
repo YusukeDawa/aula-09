@@ -21,3 +21,5 @@ def send_simple_message(to, subject, newUser):
 
     print('Enviando mensagem (Resposta)...' + str(resposta) + ' - ' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S"), flush=True)
     return resposta
+
+
